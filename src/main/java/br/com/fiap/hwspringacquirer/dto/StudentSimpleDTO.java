@@ -1,4 +1,4 @@
-package com.example.hwspringacquirer.dto;
+package br.com.fiap.hwspringacquirer.dto;
 
 public record StudentSimpleDTO (
         Long id,

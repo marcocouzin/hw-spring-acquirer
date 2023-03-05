@@ -1,4 +1,4 @@
-package com.example.hwspringacquirer;
+package br.com.fiap.hwspringacquirer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

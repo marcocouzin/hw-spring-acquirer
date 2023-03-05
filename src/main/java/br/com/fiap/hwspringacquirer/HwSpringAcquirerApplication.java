@@ -1,4 +1,4 @@
-package com.example.hwspringacquirer;
+package br.com.fiap.hwspringacquirer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
