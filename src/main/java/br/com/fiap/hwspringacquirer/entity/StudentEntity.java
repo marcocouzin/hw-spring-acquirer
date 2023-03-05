@@ -1,11 +1,16 @@
 package br.com.fiap.hwspringacquirer.entity;
 
 import jakarta.persistence.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 @Table(name = "TB_STUDENT")
+@EntityListeners(AuditingEntityListener.class)
 public class StudentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,6 +28,13 @@ public class StudentEntity {
     @Column
     private String status;
 
+    @Column(name = "created_date", nullable = false, updatable = false)
+    @CreatedDate
+    private Date createdDate;
+
+    @Column
+    @LastModifiedDate
+    private Date modifiedDate;
 
 
     public Long getIdStudent() {
@@ -79,5 +91,21 @@ public class StudentEntity {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Date getCreatedDate() {
+        return createdDate;
+    }
+
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
+    }
+
+    public Date getModifiedDate() {
+        return modifiedDate;
+    }
+
+    public void setModifiedDate(Date modifiedDate) {
+        this.modifiedDate = modifiedDate;
     }
 }
