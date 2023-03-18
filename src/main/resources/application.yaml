@@ -17,3 +17,11 @@ spring:
       ddl-auto: update
     open-in-view: true
     show-sql: true
+  security:
+    user:
+      name: username
+      password: secret
+      roles: USER
+jwt:
+  secret: s3cr37F14Ps3cr37F14Ps3cr37F14Ps3cr37F14Ps3cr37F14Ps3cr37F14Ps3cr37F14Ps3cr37F14P
+  expirationInSeconds: 1800

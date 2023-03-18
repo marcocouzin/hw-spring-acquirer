@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+// PAREI EM 02:28
+
 @RestController()
 @RequestMapping("students")
 public class StudentController {
