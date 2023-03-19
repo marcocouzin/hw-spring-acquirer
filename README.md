@@ -7,50 +7,53 @@ Este módulo tem o objetivo de cadastrar, alterar, consultar e excluir alunos.
 Aqui, também, estão disponíveis as funcionalidades de autenticar os usuários, bem como permitir a 
 geração do JWT para acessos as demais funcionalidades.
 
--> Os endpoints para gestão dos alunos são:
+### Os endpoints para gestão dos alunos são:
 1. Listar todos os alunos (id, nome e curso);
 
     GET /students
-
+![img_1.png](img_1.png)
 
 2. Listar todos os alunos por curso (id, nome e curso);
     
     GET /students?course=3SCJR
-
+![img_2.png](img_2.png)
 
 3. Consulta aluno por ID (Mostra todos os campos);
 
     GET /students/3
-
+![img_3.png](img_3.png)
 
 4. Atualiza o status do aluno;
 
-    PATCJ /students/8
-
+    PATCH /students/8
+![img_4.png](img_4.png)
 
 5. Cria um novo aluno;
 
     POST /students
-
+![img.png](img.png)
 
 6. Atualiza os dados do aluno (menos id e status);
 
     PUT /students/3
-
+![img_5.png](img_5.png)
 
 7. Apaga aluno por id.
 
     DELETE /students/3
+![img_6.png](img_6.png)
 
--> Os endpoints relacionados a segurança são:
+
+### Os endpoints relacionados a segurança são:
 1. Criar usuário para acesso às APIs;
 
     POST /users/login
-
+![img_7.png](img_7.png)
 
 2. Autentica o usuário e gera o JWT.
 
    POST /users
+![img_8.png](img_8.png)
 
 ## INSTRUÇÕES
 1. Este módulo deve ser o primeiro a ser executado para que crie as bases de autenticação;
